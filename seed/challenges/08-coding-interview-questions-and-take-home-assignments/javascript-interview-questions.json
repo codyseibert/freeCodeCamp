@@ -1,0 +1,26 @@
+{
+  "name": "JavaScript Interview Questions",
+  "order": 8,
+  "time": "",
+  "helpRoom": "HelpJavaScript",
+  "challenges": [
+    {
+      "id": "59874fc749228906236a3275",
+      "title": "Reduce",
+      "description": [
+        {
+          "question": "<pre><code class='language-javascript'>var foo = \"Hello World\";\nvar bar = foo.split('');\nvar baz = bar;\nbaz.reverse();\n\nconsole.log(bar.join(''));</code></pre>",
+          "choices": [
+            "<pre><code class='language-javascript'>dlroW olleH</code></pre>",
+            "<pre><code class='language-javascript'>[ 'd', 'l', 'r', 'o', 'W', ' ', 'o', 'l', 'l', 'e', 'H' ]</code></pre>",
+            "<pre><code class='language-javascript'>[ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd' ];</code></pre>",
+            "<pre><code class='language-javascript'>Hello World</code></pre>"
+          ],
+          "answer": 2
+        }
+      ],
+      "tests": [],
+      "challengeType": 8
+    }
+  ]
+}
