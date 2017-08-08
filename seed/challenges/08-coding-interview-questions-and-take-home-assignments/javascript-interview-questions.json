@@ -9,6 +9,7 @@
       "title": "Reduce",
       "description": [
         {
+          "subtitle": "Understanding Object References",
           "question": "<pre><code class='language-javascript'>var foo = \"Hello World\";\nvar bar = foo.split('');\nvar baz = bar;\nbaz.reverse();\n\nconsole.log(bar.join(''));</code></pre>",
           "choices": [
             "<pre><code class='language-javascript'>dlroW olleH</code></pre>",
@@ -16,7 +17,40 @@
             "<pre><code class='language-javascript'>[ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd' ];</code></pre>",
             "<pre><code class='language-javascript'>Hello World</code></pre>"
           ],
-          "answer": 2
+          "answer": 2,
+          "explanation": "You may have expected this code to print <code>Hello World</code> to the console. However, when we define <code>baz</code>, we are not creating a new array. Rather, we are simply creating a reference to the array that was created during the assignment of <code>bar</code> (in fact, both variables are just references to the same object, which is stored in memory behind the scenes). Since <code>baz</code> is just a reference to <code>bar</code>, and not its own array, any operation that is performed on it, is also performed on the original array. So, when we join <code>bar</code> back into a string, the result is a mirror image of what you might have expected! And, of course, the same result that we would have gotten from <code>console.log(baz.join(' '));</code>."
+        },
+        {
+          "subtitle": "2",
+          "question": "<pre><code class='language-javascript'>var foo = \"Hello World\";\nvar bar = foo.split('');\nvar baz = bar;\nbaz.reverse();\n\nconsole.log(bar.join(''));</code></pre>",
+          "choices": [
+            "<pre><code class='language-javascript'>dlroW olleH</code></pre>",
+            "<pre><code class='language-javascript'>[ 'd', 'l', 'r', 'o', 'W', ' ', 'o', 'l', 'l', 'e', 'H' ]</code></pre>",
+            "<pre><code class='language-javascript'>[ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd' ];</code></pre>",
+            "<pre><code class='language-javascript'>Hello World</code></pre>"
+          ],
+          "answer": 2,
+          "explanation": "You may have expected this code to print <code>Hello World</code> to the console. However, when we define <code>baz</code>, we are not creating a new array. Rather, we are simply creating a reference to the array that was created during the assignment of <code>bar</code> (in fact, both variables are just references to the same object, which is stored in memory behind the scenes). Since <code>baz</code> is just a reference to <code>bar</code>, and not its own array, any operation that is performed on it, is also performed on the original array. So, when we join <code>bar</code> back into a string, the result is a mirror image of what you might have expected! And, of course, the same result that we would have gotten from <code>console.log(baz.join(' '));</code>."
+        }
+      ],
+      "tests": [],
+      "challengeType": 8
+    },
+    {
+      "id": "59874fc741228906236a3275",
+      "title": "Map",
+      "description": [
+        {
+          "subtitle": "Understanding Object References",
+          "question": "<pre><code class='language-javascript'>var foo = \"Hello World\";\nvar bar = foo.split('');\nvar baz = bar;\nbaz.reverse();\n\nconsole.log(bar.join(''));</code></pre>",
+          "choices": [
+            "<pre><code class='language-javascript'>dlroW olleH</code></pre>",
+            "<pre><code class='language-javascript'>[ 'd', 'l', 'r', 'o', 'W', ' ', 'o', 'l', 'l', 'e', 'H' ]</code></pre>",
+            "<pre><code class='language-javascript'>[ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd' ];</code></pre>",
+            "<pre><code class='language-javascript'>Hello World</code></pre>"
+          ],
+          "answer": 2,
+          "explanation": "You may have expected this code to print <code>Hello World</code> to the console. However, when we define <code>baz</code>, we are not creating a new array. Rather, we are simply creating a reference to the array that was created during the assignment of <code>bar</code> (in fact, both variables are just references to the same object, which is stored in memory behind the scenes). Since <code>baz</code> is just a reference to <code>bar</code>, and not its own array, any operation that is performed on it, is also performed on the original array. So, when we join <code>bar</code> back into a string, the result is a mirror image of what you might have expected! And, of course, the same result that we would have gotten from <code>console.log(baz.join(' '));</code>."
         }
       ],
       "tests": [],
