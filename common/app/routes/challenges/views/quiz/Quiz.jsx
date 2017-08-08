@@ -106,7 +106,7 @@ export class QuizChallenge extends PureComponent {
 
             {isQuizPassed === false ? (
               <div>
-                <p>You'll need to get all the questions correct in order to mark this quiz as completed.</p>
+                <p>You will need to get all the questions correct in order to mark this quiz as completed.</p>
                 <button
                   className="btn btn-lg btn-primary"
                   onClick={this.props.resetQuiz}>Try Again</button>
